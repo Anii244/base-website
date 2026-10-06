@@ -10,6 +10,7 @@ function HeaderButtons() {
         Sign Up
       </a>
     </div>
+
   );
 }
 export default HeaderButtons;
