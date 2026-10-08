@@ -7,13 +7,14 @@ function Features() {
         className="
           mx-auto
           w-full
-          max-w-[1200px]
-          px-6
+          max-w-[2000px]
+          gap-6
           pb-12
           sm:px-8
           lg:px-10">
         <div
           className="
+            mt-40
             grid
             grid-cols-1
             gap-10

@@ -8,11 +8,9 @@ function HeroImage() {
         top-[-10px]
         z-0
         hidden
-        w-[560px]
+        w-[600px]
         lg:block
-        xl:w-[590px]
-      "
-    >
+        xl:w-[590px]">
       <img
         src={heroWoman}
         alt="Woman working on laptop"
