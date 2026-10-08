@@ -3,14 +3,23 @@ function HeroImage() {
   return (
     <div
       className="
+        pointer-events-none
         absolute
         right-[-20px]
-        top-[-10px]
+        top-[-180px]
         z-0
         hidden
-        w-[600px]
-        lg:block
-        xl:w-[590px]">
+        w-[540px]
+        sm:block
+        md:right-[-25px]
+        md:top-[-150px]
+        md:w-[620px]
+        lg:right-[-15px]
+        lg:top-[-175px]
+        lg:w-[700px]
+        xl:right-[-20px]
+        xl:top-[-190px]
+        xl:w-[760px] " >
       <img
         src={heroWoman}
         alt="Woman working on laptop"
@@ -19,4 +28,5 @@ function HeroImage() {
     </div>
   );
 }
+
 export default HeroImage;
