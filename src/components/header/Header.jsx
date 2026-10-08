@@ -3,12 +3,14 @@ import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
 import Nav from "./Nav";
 import HeaderButtons from "./HeaderButtons";
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="relative z-50 w-full">
-      <div className="w-full p-10 mx-auto px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-8">
-        <div className="h-22.5 flex items-center justify-between">
+      <div className="mx-auto w-full max-w-[1200px] px-6 sm:px-8 lg:px-10">
+        <div className="flex h-[90px] items-center justify-between">
           <Logo />
           <div className="hidden lg:block">
             <Nav />
@@ -18,44 +20,63 @@ function Header() {
           </div>
           <button
             onClick={() => setMenuOpen(true)}
-            className="lg:hidden p-2 text-gray-800"
+            className="rounded-md p-2 lg:hidden"
             aria-label="Open menu"
           >
-            <Menu size={28} />
+            <Menu size={26} />
           </button>
-        </div>
-      </div>
-      <div
-        className={`
-          fixed top-0 left-0 h-screen w-80 bg-white shadow-2xl
-          z-100 transform transition-transform duration-300
-          ${menuOpen ? "translate-x-0" : "-translate-x-full"}
-        `}
-      >
-        <div className="h-22.5 px-5 flex items-center justify-between border-b">
-          <Logo />
-          <button
-            onClick={() => setMenuOpen(false)}
-            className="p-2 text-gray-700"
-            aria-label="Close menu"
-          >
-            <X size={26} />
-          </button>
-        </div>
-        <div className="px-6 py-8">
-          <Nav />
-          <div className="mt-8 pt-6 border-t">
-            <HeaderButtons />
-          </div>
+
         </div>
       </div>
       {menuOpen && (
         <div
           onClick={() => setMenuOpen(false)}
-          className="fixed inset-0 bg-black/40 z-90 lg:hidden"
+          className="fixed inset-0 z-40 bg-black/40 lg:hidden"
         />
       )}
+      <aside
+        className={`
+          fixed
+          left-0
+          top-0
+          z-50
+          h-screen
+          w-[280px]
+          bg-white
+          shadow-2xl
+          transition-transform
+          duration-300
+          lg:hidden
+          ${menuOpen ? "translate-x-0" : "-translate-x-full"}
+        `}
+      >
+
+        <div className="flex h-[90px] items-center justify-between border-b px-6">
+          
+          <Logo />
+
+          <button
+            onClick={() => setMenuOpen(false)}
+            className="rounded-md p-2"
+            aria-label="Close menu"
+          >
+            <X size={25} />
+          </button>
+
+        </div>
+
+        <div className="px-6 py-8">
+          <Nav />
+
+          <div className="mt-8 border-t pt-6">
+            <HeaderButtons />
+          </div>
+        </div>
+
+      </aside>
+
     </header>
   );
 }
+
 export default Header;
