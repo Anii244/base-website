@@ -7,7 +7,7 @@ function HeaderButtons({ darkMode, setDarkMode }) {
         className="
           rounded-full
           p-1
-          text-gray-700
+          text-gray-50
           transition
           hover:bg-gray-200
           dark:text-amber-300
@@ -24,8 +24,9 @@ function HeaderButtons({ darkMode, setDarkMode }) {
       <a
         href=""
         className="
-          text-sm
-          text-gray-700
+          text-md
+          font-semibold
+          text-gray-100
           transition
           hover:text-[#2855d9]
           dark:text-amber-200
@@ -37,8 +38,9 @@ function HeaderButtons({ darkMode, setDarkMode }) {
       <a
         href=""
         className="
-          text-sm
-          text-gray-700
+          text-md
+          font-semibold
+          text-gray-100
           transition
           hover:text-[#2855d9]
           dark:text-amber-200

@@ -10,7 +10,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="min-h-screen bg-[#f8f8f8] text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-white">
+    <div className="min-h-screen bg-[#f8f8f8] overflow-x-hidden text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-white">
       <Header
         darkMode={darkMode}
         setDarkMode={setDarkMode}

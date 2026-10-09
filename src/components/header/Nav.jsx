@@ -5,28 +5,26 @@ function Nav() {
       <a
         href=""
         className="
-          text-sm
+          text-md
           font-semibold
           text-[#2855d9]
           transition
           hover:text-[#1747bf]
-          dark:text-amber-400
-          dark:hover:text-amber-300
-        "
+          dark:text-shadow-zinc-800
+          dark:hover:text-amber-300"
       >
         Home
       </a>
       <a
         href=""
         className="
-          text-sm
+          text-md
+          text-gray-400
           font-semibold
-          text-gray-700
           transition
           hover:text-[#2855d9]
-          dark:text-amber-200
-          dark:hover:text-amber-400
-        "
+          dark:text-zinc-500
+          dark:hover:text-amber-400"
       >
         Features
       </a>
@@ -36,14 +34,13 @@ function Nav() {
           flex
           items-center
           gap-1
-          text-sm
+          text-md
           font-semibold
-          text-gray-700
+          text-gray-400
           transition
           hover:text-[#2855d9]
-          dark:text-amber-200
-          dark:hover:text-amber-400
-        "
+          dark:text-zinc-500
+          dark:hover:text-amber-400 "
       >
         Pages
         <ChevronDown size={14} />
@@ -51,14 +48,13 @@ function Nav() {
       <a
         href=""
         className="
-          text-sm
+          text-md
           font-semibold
-          text-gray-700
+          text-gray-400
           transition
           hover:text-[#2855d9]
-          dark:text-amber-200
-          dark:hover:text-amber-400
-        "
+          dark:text-zinc-500
+          dark:hover:text-amber-400"
       >
         Support
       </a>

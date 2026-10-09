@@ -2,17 +2,16 @@ import { UserRound, Globe, Users } from "lucide-react";
 import FeatureCard from "./FeatureCard";
 function Features() {
   return (
-    <section className="relative z-20 w-full">
+    <section className="relative z-20 w-full pt-6">
       <div
         className="
           w-full
+          pt-14
           px-6
           pb-12
           sm:px-8
           lg:px-12
-          xl:px-16
-        "
-      >
+          xl:px-16" >
         <div
           className="
             grid
@@ -20,9 +19,7 @@ function Features() {
             gap-10
             sm:grid-cols-2
             lg:grid-cols-3
-            lg:gap-12
-          "
-        >
+            lg:gap-8">
           <FeatureCard
             icon={<UserRound size={25} />}
             color="bg-[#df3f78]"

@@ -9,15 +9,15 @@ function FeatureCard({
       <div
         className={`
           flex
-          h-14
-          w-14
+          h-16
+          w-16
           shrink-0
           items-center
           justify-center
           rounded-full
           text-white
-          sm:h-16
-          sm:w-16
+          sm:h-18
+          sm:w-18
           ${color}
         `}
       >
@@ -29,12 +29,13 @@ function FeatureCard({
             text-xl
             font-bold
             text-gray-800
-            dark:text-white
-          "
-        >
+            dark:text-white 
+            sm:text-xl
+            md:text-2xl
+            lg:text-2xl
+            xl:text-3xl" >
           {title}
         </h3>
-
         <p
           className="
             mt-2
@@ -42,9 +43,11 @@ function FeatureCard({
             text-sm
             leading-6
             text-gray-500
-            dark:text-amber-100
-          "
-        >
+            dark:text-zinc-400
+            sm:text-sm
+            md:text-sm
+            lg:text-md
+            xl:text-lg" >
           {description}
         </p>
       </div>
